@@ -7,7 +7,7 @@ class BrownianRobot:
         self.arena_size = arena_size
         self.position = np.array([arena_size / 2, arena_size / 2])  # Start at center
         self.speed = speed
-        self.angle = np.random.uniform(0, 2 * np.pi)  # Random initial angle
+        self.angle = 0  # Random initial angle
 
         self.fig, self.ax = plt.subplots(figsize=(5, 5))
         self.ax.set_xlim(0, arena_size)
